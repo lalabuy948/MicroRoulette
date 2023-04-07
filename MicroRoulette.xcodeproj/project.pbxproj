@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C7C925829E00C4200C40761 /* MicroRoulette Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C7C925729E00C4200C40761 /* MicroRoulette Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C7C925D29E00C4200C40761 /* MicroRouletteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C925C29E00C4200C40761 /* MicroRouletteApp.swift */; };
+		8C7C925F29E00C4200C40761 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C925E29E00C4200C40761 /* ContentView.swift */; };
+		8C7C926129E00C4300C40761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C926029E00C4300C40761 /* Assets.xcassets */; };
+		8C7C926429E00C4300C40761 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C926329E00C4300C40761 /* Preview Assets.xcassets */; };
+		8C7C926E29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C926D29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift */; };
+		8C7C927829E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C927729E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift */; };
+		8C7C927A29E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C927929E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C7C925929E00C4200C40761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C7C924B29E00C4200C40761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C7C925629E00C4200C40761;
+			remoteInfo = "MicroRoulette Watch App";
+		};
+		8C7C926A29E00C4300C40761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C7C924B29E00C4200C40761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C7C925629E00C4200C40761;
+			remoteInfo = "MicroRoulette Watch App";
+		};
+		8C7C927429E00C4300C40761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C7C924B29E00C4200C40761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C7C925629E00C4200C40761;
+			remoteInfo = "MicroRoulette Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C7C928029E00C4300C40761 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8C7C925829E00C4200C40761 /* MicroRoulette Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C7C925129E00C4200C40761 /* MicroRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7C925729E00C4200C40761 /* MicroRoulette Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MicroRoulette Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7C925C29E00C4200C40761 /* MicroRouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroRouletteApp.swift; sourceTree = "<group>"; };
+		8C7C925E29E00C4200C40761 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C7C926029E00C4300C40761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C7C926329E00C4300C40761 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C7C926929E00C4300C40761 /* MicroRoulette Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MicroRoulette Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7C926D29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroRoulette_Watch_AppTests.swift; sourceTree = "<group>"; };
+		8C7C927329E00C4300C40761 /* MicroRoulette Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MicroRoulette Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7C927729E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroRoulette_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		8C7C927929E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroRoulette_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C7C925429E00C4200C40761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C926629E00C4300C40761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C927029E00C4300C40761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C7C924A29E00C4200C40761 = {
+			isa = PBXGroup;
+			children = (
+				8C7C925B29E00C4200C40761 /* MicroRoulette Watch App */,
+				8C7C926C29E00C4300C40761 /* MicroRoulette Watch AppTests */,
+				8C7C927629E00C4300C40761 /* MicroRoulette Watch AppUITests */,
+				8C7C925229E00C4200C40761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C7C925229E00C4200C40761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C925129E00C4200C40761 /* MicroRoulette.app */,
+				8C7C925729E00C4200C40761 /* MicroRoulette Watch App.app */,
+				8C7C926929E00C4300C40761 /* MicroRoulette Watch AppTests.xctest */,
+				8C7C927329E00C4300C40761 /* MicroRoulette Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C7C925B29E00C4200C40761 /* MicroRoulette Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C925C29E00C4200C40761 /* MicroRouletteApp.swift */,
+				8C7C925E29E00C4200C40761 /* ContentView.swift */,
+				8C7C926029E00C4300C40761 /* Assets.xcassets */,
+				8C7C926229E00C4300C40761 /* Preview Content */,
+			);
+			path = "MicroRoulette Watch App";
+			sourceTree = "<group>";
+		};
+		8C7C926229E00C4300C40761 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C926329E00C4300C40761 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C7C926C29E00C4300C40761 /* MicroRoulette Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C926D29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift */,
+			);
+			path = "MicroRoulette Watch AppTests";
+			sourceTree = "<group>";
+		};
+		8C7C927629E00C4300C40761 /* MicroRoulette Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C927729E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift */,
+				8C7C927929E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "MicroRoulette Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C7C925029E00C4200C40761 /* MicroRoulette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7C928129E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette" */;
+			buildPhases = (
+				8C7C924F29E00C4200C40761 /* Resources */,
+				8C7C928029E00C4300C40761 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C7C925A29E00C4200C40761 /* PBXTargetDependency */,
+			);
+			name = MicroRoulette;
+			productName = MicroRoulette;
+			productReference = 8C7C925129E00C4200C40761 /* MicroRoulette.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8C7C925629E00C4200C40761 /* MicroRoulette Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7C927D29E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch App" */;
+			buildPhases = (
+				8C7C925329E00C4200C40761 /* Sources */,
+				8C7C925429E00C4200C40761 /* Frameworks */,
+				8C7C925529E00C4200C40761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MicroRoulette Watch App";
+			productName = "MicroRoulette Watch App";
+			productReference = 8C7C925729E00C4200C40761 /* MicroRoulette Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C7C926829E00C4300C40761 /* MicroRoulette Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7C928429E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch AppTests" */;
+			buildPhases = (
+				8C7C926529E00C4300C40761 /* Sources */,
+				8C7C926629E00C4300C40761 /* Frameworks */,
+				8C7C926729E00C4300C40761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C7C926B29E00C4300C40761 /* PBXTargetDependency */,
+			);
+			name = "MicroRoulette Watch AppTests";
+			productName = "MicroRoulette Watch AppTests";
+			productReference = 8C7C926929E00C4300C40761 /* MicroRoulette Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C7C927229E00C4300C40761 /* MicroRoulette Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7C928729E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch AppUITests" */;
+			buildPhases = (
+				8C7C926F29E00C4300C40761 /* Sources */,
+				8C7C927029E00C4300C40761 /* Frameworks */,
+				8C7C927129E00C4300C40761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C7C927529E00C4300C40761 /* PBXTargetDependency */,
+			);
+			name = "MicroRoulette Watch AppUITests";
+			productName = "MicroRoulette Watch AppUITests";
+			productReference = 8C7C927329E00C4300C40761 /* MicroRoulette Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C7C924B29E00C4200C40761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8C7C925029E00C4200C40761 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8C7C925629E00C4200C40761 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8C7C926829E00C4300C40761 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8C7C925629E00C4200C40761;
+					};
+					8C7C927229E00C4300C40761 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8C7C925629E00C4200C40761;
+					};
+				};
+			};
+			buildConfigurationList = 8C7C924E29E00C4200C40761 /* Build configuration list for PBXProject "MicroRoulette" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C7C924A29E00C4200C40761;
+			productRefGroup = 8C7C925229E00C4200C40761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C7C925029E00C4200C40761 /* MicroRoulette */,
+				8C7C925629E00C4200C40761 /* MicroRoulette Watch App */,
+				8C7C926829E00C4300C40761 /* MicroRoulette Watch AppTests */,
+				8C7C927229E00C4300C40761 /* MicroRoulette Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C7C924F29E00C4200C40761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C925529E00C4200C40761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C926429E00C4300C40761 /* Preview Assets.xcassets in Resources */,
+				8C7C926129E00C4300C40761 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C926729E00C4300C40761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C927129E00C4300C40761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7C925329E00C4200C40761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C925F29E00C4200C40761 /* ContentView.swift in Sources */,
+				8C7C925D29E00C4200C40761 /* MicroRouletteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C926529E00C4300C40761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C926E29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7C926F29E00C4300C40761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C927829E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift in Sources */,
+				8C7C927A29E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C7C925A29E00C4200C40761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C7C925629E00C4200C40761 /* MicroRoulette Watch App */;
+			targetProxy = 8C7C925929E00C4200C40761 /* PBXContainerItemProxy */;
+		};
+		8C7C926B29E00C4300C40761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C7C925629E00C4200C40761 /* MicroRoulette Watch App */;
+			targetProxy = 8C7C926A29E00C4300C40761 /* PBXContainerItemProxy */;
+		};
+		8C7C927529E00C4300C40761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C7C925629E00C4200C40761 /* MicroRoulette Watch App */;
+			targetProxy = 8C7C927429E00C4300C40761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C7C927B29E00C4300C40761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C7C927C29E00C4300C40761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8C7C927E29E00C4300C40761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MicroRoulette Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MicroRoulette;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrpopov.MicroRoulette.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		8C7C927F29E00C4300C40761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MicroRoulette Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MicroRoulette;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrpopov.MicroRoulette.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		8C7C928229E00C4300C40761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				INFOPLIST_KEY_CFBundleDisplayName = MicroRoulette;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrpopov.MicroRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8C7C928329E00C4300C40761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				INFOPLIST_KEY_CFBundleDisplayName = MicroRoulette;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrpopov.MicroRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C7C928529E00C4300C40761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrpopov.MicroRoulette-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroRoulette Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MicroRoulette Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		8C7C928629E00C4300C40761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrpopov.MicroRoulette-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroRoulette Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MicroRoulette Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		8C7C928829E00C4300C40761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrpopov.MicroRoulette-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MicroRoulette Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		8C7C928929E00C4300C40761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPKSE537F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrpopov.MicroRoulette-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MicroRoulette Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C7C924E29E00C4200C40761 /* Build configuration list for PBXProject "MicroRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7C927B29E00C4300C40761 /* Debug */,
+				8C7C927C29E00C4300C40761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7C927D29E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7C927E29E00C4300C40761 /* Debug */,
+				8C7C927F29E00C4300C40761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7C928129E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7C928229E00C4300C40761 /* Debug */,
+				8C7C928329E00C4300C40761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7C928429E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7C928529E00C4300C40761 /* Debug */,
+				8C7C928629E00C4300C40761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7C928729E00C4300C40761 /* Build configuration list for PBXNativeTarget "MicroRoulette Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7C928829E00C4300C40761 /* Debug */,
+				8C7C928929E00C4300C40761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C7C924B29E00C4200C40761 /* Project object */;
+}
