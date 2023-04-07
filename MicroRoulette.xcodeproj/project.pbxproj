@@ -15,6 +15,7 @@
 		8C7C926E29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C926D29E00C4300C40761 /* MicroRoulette_Watch_AppTests.swift */; };
 		8C7C927829E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C927729E00C4300C40761 /* MicroRoulette_Watch_AppUITests.swift */; };
 		8C7C927A29E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C927929E00C4300C40761 /* MicroRoulette_Watch_AppUITestsLaunchTests.swift */; };
+		8C7C929029E01FCE00C40761 /* WatchShaker in Frameworks */ = {isa = PBXBuildFile; productRef = 8C7C928F29E01FCE00C40761 /* WatchShaker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7C929029E01FCE00C40761 /* WatchShaker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = "MicroRoulette Watch App";
+			packageProductDependencies = (
+				8C7C928F29E01FCE00C40761 /* WatchShaker */,
+			);
 			productName = "MicroRoulette Watch App";
 			productReference = 8C7C925729E00C4200C40761 /* MicroRoulette Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 8C7C924A29E00C4200C40761;
+			packageReferences = (
+				8C7C928E29E01FCE00C40761 /* XCRemoteSwiftPackageReference "WatchShaker" */,
+			);
 			productRefGroup = 8C7C925229E00C4200C40761 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -688,6 +696,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C7C928E29E01FCE00C40761 /* XCRemoteSwiftPackageReference "WatchShaker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ezefranca/WatchShaker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C7C928F29E01FCE00C40761 /* WatchShaker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C7C928E29E01FCE00C40761 /* XCRemoteSwiftPackageReference "WatchShaker" */;
+			productName = WatchShaker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C7C924B29E00C4200C40761 /* Project object */;
 }
