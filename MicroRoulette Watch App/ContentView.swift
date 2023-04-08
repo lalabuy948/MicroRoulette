@@ -8,19 +8,26 @@
 import SwiftUI
 import WatchShaker
 
+
 struct ContentView: View {
-    private var numbers = 0...14
+    private var numbers = 0...12
     private var data: [Double] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] // 13
     private var slots: [Int] =   [3, 8, 0, 5, 12,1, 4, 9, 6,11, 2, 7,10]
     private var segments = 13
     
-    private var weakSpin = 360 * 3
-    private var midSpin = 360 * 5
+    private var weakSpin   = 360 * 3
+    private var midSpin    = 360 * 5
     private var strongSpin = 360 * 7
-    private var randDegree = Int.random(in: 1...360)
+    
+    @State private var randDegree = Int.random(in: 1...360)
+    
+    @State private var oneWin = false
+    @State private var doubleWin = false
+    @State private var fontSize = 16.0
 
     @State private var oddEven = ["", "odd", "even"]
-    @State private var number: Int = 0
+    @State private var pickedOddEven: String = ""
+    @State private var pickedNumber: Int = 0
     
     @State private var scrollAmount = 0.0
     @State private var progress = 0.0
@@ -34,17 +41,17 @@ struct ContentView: View {
         VStack(spacing: 0) {
             
             HStack {
-                Picker("", selection: $oddEven) {
-                    ForEach(oddEven, id: \.self) { item in Text(item) }
+                Picker("", selection: $pickedOddEven) {
+                    ForEach(oddEven, id: \.self) { item in Text(pickedOddEven) }
                 }
                 .padding()
-                .focusable()
+                .focusable(false)
     
-                Picker("", selection: $number) {
-                    ForEach(numbers, id: \.self) { _ in Text("\(number)") }
+                Picker("", selection: $pickedNumber) {
+                    ForEach(numbers, id: \.self) { _ in Text("\(pickedNumber)") }
                 }
                 .padding()
-                .focusable()
+                .focusable(false)
 
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 65)
@@ -66,16 +73,12 @@ struct ContentView: View {
                     .onChange(of: scrollAmount) { value in
                         self.progress = value
                     }
-                    // spin starts with tap on roulette
-//                    .onTapGesture {
-//                        self.spin.toggle()
-//                    }
 
                 Circle()
                     .offset(y: -75)
                     .foregroundColor(.white)
                     .frame(width: 10)
-                    .rotationEffect(.degrees(spin ? Double((midSpin + Int.random(in: 1...360))) : 0))
+                    .rotationEffect(.degrees(spin ? Double((midSpin + randDegree)) : 0))
                     .animation(
                         .spring(response: 2, dampingFraction: 0.9, blendDuration: 0)
                         .repeatCount(1, autoreverses: false)
@@ -104,7 +107,36 @@ struct ContentView: View {
                             self.spin.toggle()
                         }
                     }
+
+                let randSector = (Double(randDegree) / 27.7).rounded(.up)
+
+                if (pickedOddEven == "even" && slots[Int(randSector - 1)] % 2 == 0) ||
+                   (pickedOddEven == "odd"  && slots[Int(randSector - 1)] % 2 != 0)
+                {
+                    Text("👏🏻")
+                        .animatableSystemFont(size: fontSize)
+                        .onAppear {
+                            withAnimation(
+                                .interactiveSpring()
+                                .repeatCount(10)
+                            ) {
+                                fontSize = 32
+                            }
+                        }
+                }
                 
+                if slots[Int(randSector - 1)] == pickedNumber {
+                    Text("🎉")
+                        .animatableSystemFont(size: fontSize)
+                        .onAppear {
+                            withAnimation(
+                                .interactiveSpring()
+                                .repeatCount(10)
+                            ) {
+                                fontSize = 32
+                            }
+                        }
+                }
             }
             .padding(.top, 10)
         }
@@ -176,5 +208,27 @@ struct Sector: Shape {
         path.addLine(to: CGPoint(x: rect.midX, y: rect.midY))
         path.closeSubpath()
         return path
+    }
+}
+
+struct AnimatableSystemFontModifier: ViewModifier, Animatable {
+    var size: Double
+    var weight: Font.Weight
+    var design: Font.Design
+
+    var animatableData: Double {
+        get { size }
+        set { size = newValue }
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: size, weight: weight, design: design))
+    }
+}
+
+extension View {
+    func animatableSystemFont(size: Double, weight: Font.Weight = .regular, design: Font.Design = .default) -> some View {
+        self.modifier(AnimatableSystemFontModifier(size: size, weight: weight, design: design))
     }
 }
