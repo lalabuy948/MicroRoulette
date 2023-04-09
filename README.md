@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Game was inspired by [LAUTIE Carnival](https://lautie.com/product/carnival-spinner/), fully written in SwiftUI    
+  Game was inspired by handheld casino roulette, fully written in SwiftUI    
 </p>
 
 <br><br>
@@ -17,6 +17,10 @@
 
 <hr>
 <br>
+
+Inspired by: 
+- [Casino Tourbillon ](https://jacobandco.com/timepieces/high-complication-masterpieces/casino-roulette-tourbillon)
+- [LautieEDC Carnival 2099](https://lautie.com/product/carnival-spinner/)
 
 Tech used: 
 - [SwiftUI](https://developer.apple.com/documentation/swiftui)
