@@ -124,7 +124,7 @@ struct ContentView: View {
                             }
                         }
                 }
-                
+
                 if slots[Int(randSector - 1)] == pickedNumber {
                     Text("🎉")
                         .animatableSystemFont(size: fontSize)
@@ -139,7 +139,7 @@ struct ContentView: View {
                 }
 
 //                Text("\(pickedNumber)")
-                Text("\(slots[Int(0)])")
+//                Text("\(slots[Int(0)])")
             }
             .padding(.top, 10)
             
