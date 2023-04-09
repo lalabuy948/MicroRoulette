@@ -137,8 +137,12 @@ struct ContentView: View {
                             }
                         }
                 }
+
+//                Text("\(pickedNumber)")
+                Text("\(slots[Int(0)])")
             }
             .padding(.top, 10)
+            
         }
     }
 }
@@ -170,6 +174,8 @@ struct PieChart: View {
                 let endAngle = angle(for: data[0..<index].reduce(0, +))
                 let midAngle = startAngle + (endAngle - startAngle) / 1.3 // midpoint of the sector
                 let labelRadius = 120 / 2.5 // radius for the label to be placed
+                
+                var labelColor: Color = .white
 
                 ZStack {
 //                    @todo: Add proper sectors
@@ -179,15 +185,37 @@ struct PieChart: View {
 //                            Sector(startAngle: startAngle, endAngle: endAngle)
 //                                .stroke(Color.white, lineWidth: lineWidth)
 //                        )
+
+                    if slots[index] % 2 == 0 && slots[index] != 0 {
+                        Text("\(slots[index])")
+                            .font(.system(size: 10))
+                            .fontWeight(Font.Weight.heavy)
+                            .foregroundColor(.red)
+                            .rotationEffect(midAngle)
+                            .offset(x: labelRadius * sin(midAngle.radians),
+                                    y: -labelRadius * cos(midAngle.radians))
+                    }
                     
-                    // Circular text label
-                    Text("\(slots[index])")
-                        .font(.system(size: 10))
-                        .fontWeight(Font.Weight.heavy)
-                        .foregroundColor(.white)
-                        .rotationEffect(midAngle)
-                        .offset(x: labelRadius * sin(midAngle.radians),
-                                y: -labelRadius * cos(midAngle.radians))
+                    if slots[index] % 2 != 0 && slots[index] != 0 {
+                        // Circular text label
+                        Text("\(slots[index])")
+                            .font(.system(size: 10))
+                            .fontWeight(Font.Weight.heavy)
+                            .foregroundColor(.white)
+                            .rotationEffect(midAngle)
+                            .offset(x: labelRadius * sin(midAngle.radians),
+                                    y: -labelRadius * cos(midAngle.radians))
+                    }
+                    
+                    if slots[index] == 0 {
+                        Text("\(slots[index])")
+                            .font(.system(size: 10))
+                            .fontWeight(Font.Weight.heavy)
+                            .foregroundColor(.green)
+                            .rotationEffect(midAngle)
+                            .offset(x: labelRadius * sin(midAngle.radians),
+                                    y: -labelRadius * cos(midAngle.radians))
+                    }
                 }
             }
         }
