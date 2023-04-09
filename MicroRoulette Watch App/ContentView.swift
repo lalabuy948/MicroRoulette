@@ -174,8 +174,6 @@ struct PieChart: View {
                 let endAngle = angle(for: data[0..<index].reduce(0, +))
                 let midAngle = startAngle + (endAngle - startAngle) / 1.3 // midpoint of the sector
                 let labelRadius = 120 / 2.5 // radius for the label to be placed
-                
-                var labelColor: Color = .white
 
                 ZStack {
 //                    @todo: Add proper sectors
