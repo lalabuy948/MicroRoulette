@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://developer.apple.com/swift/"><img src="https://badgen.net/badge/Swift/5.5/orange"/></a>
-  <a href="https://github.com/lalabuy948/MiniSpaceJourney/releases"><img src="https://badgen.net/github/release/lalabuy948/MiniSpaceJourney"/></a>
+  <!-- <a href="https://github.com/lalabuy948/MiniSpaceJourney/releases"><img src="https://badgen.net/github/release/lalabuy948/MiniSpaceJourney"/></a> -->
 </p>
 
 <p align="center">
