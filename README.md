@@ -13,7 +13,7 @@
 
 <br><br>
 
-![preview](/github/preview.png)
+![preview](/github/Preview.png)
 
 <hr>
 <br>
